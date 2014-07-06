@@ -11,6 +11,7 @@ foreach ($social_accounts as $site => $id) {
 $data['title'] = $instance['title'];
 $data['icons'] = $instance['icons'];
 $data['labels'] = $instance['labels'];
+$data['show_title'] = $instance['show_title'];
 
 ?>
 
@@ -48,6 +49,9 @@ $sizes = array(
 
 <?php if(esc_attr($data['labels'] == 'show')) { $checked = ' checked="checked"'; } else { $checked = ''; } ?>
 <p class="label_options"><input type="checkbox" id="<?php echo $this->get_field_id('labels'); ?>" name="<?php echo $this->get_field_name('labels'); ?>" value="show"<?php echo $checked; ?> /> <label for="<?php echo $this->get_field_id('labels'); ?>">Show Labels</label></p>
+
+<?php if(esc_attr($data['show_title'] == 'show')) { $checked = ' checked="checked"'; } else { $checked = ''; } ?>
+<p class="label_options"><input type="checkbox" id="<?php echo $this->get_field_id('show_title'); ?>" name="<?php echo $this->get_field_name('show_title'); ?>" value="show"<?php echo $checked; ?> /> <label for="<?php echo $this->get_field_id('show_title'); ?>">Hide Title</label></p>
 
 <ul class="social_accounts">
 	<?php foreach ($social_accounts as $site => $id) : ?>
