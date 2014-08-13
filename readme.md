@@ -20,12 +20,12 @@ Extending
 
 Developers can easily add more social media websites by creating a filter in the active theme's functions.php file like such:
 
-	`function add_new_icons($icon_list) {
+	function add_new_icons($icon_list) {
 		$icon_list['Full Website Name'] = 'full-website-id';
  
 		return $icon_list;
 	}
-	add_filter('social_icon_accounts', 'add_new_icons');`
+	add_filter('social_icon_accounts', 'add_new_icons');
 
 The full-website-id should reflect the name of the image you create in each of the icon folder sizes, or in your custom icon directory. It is also used to populate the class field of the icon when the widget displays. The Social Icon Widget looks for .gif, .jpg, .jpeg, and .png in order and returns the first extention it finds.
 
@@ -34,25 +34,25 @@ Altering Widget Output
 
 Output of each icon can be adjusted with the social_icon_output filter:
 
-	`function social_icons_html_output($format) {
+	function social_icons_html_output($format) {
 		$format = '<li class="%1$s"><a href="%2$s" target="_blank">%3$s%4$s</a></li>';
 		return $format;
 	}
-	add_filter('social_icon_output', 'social_icons_html_output');`
+	add_filter('social_icon_output', 'social_icons_html_output');
 
 The opening and closing unordered list tags can be edited or changed with the social_icon_opening_tag and social_icon_closing_tag filters:
 
-	`function social_icon_opening_tag($opening) {
+	function social_icon_opening_tag($opening) {
 		$opening = '<ul class="'.$ul_class.'">';
 		return $opening;
 	}
-	add_filter('social_icon_output', 'social_icons_html_output');`
+	add_filter('social_icon_output', 'social_icons_html_output');
 
-	`function social_icons_html_output($closing) {
+	function social_icons_html_output($closing) {
 		$closing = '</ul>';
 		return $closing;
 	}
-	add_filter('social_icon_output', 'social_icons_html_output');`
+	add_filter('social_icon_output', 'social_icons_html_output');
 
 About
 -----
