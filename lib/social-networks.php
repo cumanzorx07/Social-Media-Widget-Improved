@@ -14,8 +14,8 @@
 	The full-website-id should reflect the name of the image you create in each of the icon folder sizes, or in your custom icon directory. It is also used to populate the class field of the icon when the widget displays. The Social Icon Widget looks for .gif, .jpg, .jpeg, and .png in order and returns the first extention it finds.
 */
 
-	global $social_accounts;
-	$social_accounts = array(
+	global $siw_social_accounts;
+	$siw_social_accounts = array(
 		'500px' => 'fivehundredpx',
 		'About.me' => 'aboutme',
 		'Behance' => 'behance',
@@ -50,6 +50,6 @@
 	);
 
 	if( has_filter('social_icon_accounts') ) {
-		$social_accounts = apply_filters('social_icon_accounts', $social_accounts);
+		$siw_social_accounts = apply_filters('social_icon_accounts', $siw_social_accounts);
 	}
 ?>
