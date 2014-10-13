@@ -38,6 +38,11 @@ $ul_class .= 'icons-'.$siw_icons;
 		}
 		else {
 			$siw_abs_path = str_replace('lib/', '', plugin_dir_path( __FILE__ ));
+
+			/*	Fix for Windows/XAMPP where the slash goes the wrong way.
+				Thanks to VictoriousK */
+			$siw_abs_path = str_replace('\\', '/', $siw_abs_path);
+			
 			$siw_icon_path =  $siw_abs_path . 'icons/'.$siw_icons.'/'.$id.'.{gif,jpg,jpeg,png}';
 
 			if($siw_icons == 'large') { $imgsize = 'height="64" width="64"'; }

@@ -3,8 +3,8 @@ Contributors: dannisbet
 Tags: social, media, widget, follow, profile, icons, 500px, About.me, Behance, Dribbble, Codepen, Email, Envato, Facebook, Flickr, FourSquare, GitHub, Google+, Instagram, Kickstarter, Klout, LinkedIn, Medium, Path, Pinterest, RSS, Speaker Deck, StumbleUpon, Technorati, Tumblr, Twitter, Vimeo, Vine, WordPress, Yelp, YouTube, Zerply
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CJN7XU3Z7XHDL
 Requires at least: 3.5.1
-Tested up to: 3.9
-Stable tag: 14.08
+Tested up to: 4.0
+Stable tag: 14.10
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -73,6 +73,10 @@ The opening and closing unordered list tags can be edited or changed with the so
 2. Widget settings via the Appearance > Widgets screen.
 
 == Changelog ==
+
+= 14.10 =
+* Added Soundcloud to default list of services
+* Implemented slash fix for those running the plugin on XAMMP/Windows (Thanks VictoriousK)
 
 = 14.08 =
 * Added prefixes to PHP variables to prevent conflicts with other plugins.

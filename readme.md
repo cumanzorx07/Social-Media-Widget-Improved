@@ -1,5 +1,5 @@
-Social Icons Widget for WordPress
-=================================
+Social Icons Widget v14.10 for WordPress
+========================================
 
 The Social Media Icons widget takes a simple, extendable approach to displaying links to your social media profiles in WordPress. The purpose of this plugin was to strip away the complexities I found most other plugins to have and simply display a set of basic social icons in an unordered list. There's no frills and no fanciness, making it easy to style to your website's look.
 

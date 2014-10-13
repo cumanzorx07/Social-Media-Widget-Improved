@@ -36,6 +36,7 @@
 		'Path' => 'path',
 		'Pinterest' => 'pinterest',
 		'RSS Feed' => 'rss',
+		'SoundCloud' => 'soundcloud',
 		'Speaker Deck' => 'speakerdeck',
 		'StumbleUpon' => 'stumbleupon',
 		'Technorati' => 'technorati',
