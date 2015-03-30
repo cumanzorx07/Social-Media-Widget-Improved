@@ -13,10 +13,10 @@ class SMI_Optimized extends WP_Widget {
 
 	function __construct() {
 		parent::__construct(
-			'social-icons-widget', // Base ID
-			'Social Icons', // Widget Name
+			'smi_optimized-widget', // Base ID
+			'Social Icons Optimized', // Widget Name
 			array(
-				'classname' => 'social-icons-widget',
+				'classname' => 'SMI_Optimized',
 				'description' => 'Displays a list of social media website icons and a link to your profile.',
 			),
 			array(
@@ -36,10 +36,10 @@ class SMI_Optimized extends WP_Widget {
 	}
 
 	function update($new_instance, $old_instance) {
-		global $siw_social_accounts;
+		global $smi_social_accounts;
 		$instance = array();
 
-		foreach ($siw_social_accounts as $site => $id) {
+		foreach ($smi_social_accounts as $site => $id) {
 			$instance[$id] = $new_instance[$id];
 		}
 
@@ -56,11 +56,11 @@ class SMI_Optimized extends WP_Widget {
 	}
 
 	function register_admin_styles() {
-		wp_enqueue_style('social-icons-widget-admin', plugins_url('social-media-icons-widget/css/social_icons_admin.css'));
+		wp_enqueue_style('smi_optimized-widget-admin', plugins_url('smi-optimized/css/social_icons_admin.css'));
 	}
 
 	function register_widget_styles() {
-		wp_enqueue_style('social-icons-widget-widget', plugins_url('social-media-icons-widget/css/SMI_Optimized.css'));
+		wp_enqueue_style('smi_optimized-widget-widget', plugins_url('smi-optimized/css/SMI_Optimized.css'));
 	}
 
 }
