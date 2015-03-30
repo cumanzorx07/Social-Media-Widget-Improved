@@ -1,14 +1,15 @@
 <?php
 /*
-Plugin Name: Social Icons Widget
-Plugin URI: http://github.com/dannisbet/Social-Icons-Widget
-Version: 14.10
-Description: Displays a list of social media website icons and a link to your profile.
-Author: Dan Nisbet
-Author URI: http://nisbetcreative.com/
+Plugin Name: SMI Optimized
+Plugin URI: https://github.com/cumanzorx07/smi-optimized
+Version: 1.0
+Description: This plugins provides a list of social media icon to link your provide with your site.
+Author: Carlos Umanzor
+Author URI: http://carlosumanzor.com/
+Original Idea: Dan Nisbet (https://nisbetcreative.com/)
 */
 
-class Social_Icons_Widget extends WP_Widget {
+class SMI_Optimized extends WP_Widget {
 
 	function __construct() {
 		parent::__construct(
@@ -59,11 +60,11 @@ class Social_Icons_Widget extends WP_Widget {
 	}
 
 	function register_widget_styles() {
-		wp_enqueue_style('social-icons-widget-widget', plugins_url('social-media-icons-widget/css/social_icons_widget.css'));
+		wp_enqueue_style('social-icons-widget-widget', plugins_url('social-media-icons-widget/css/SMI_Optimized.css'));
 	}
 
 }
 
-add_action('widgets_init', create_function('', 'register_widget("Social_Icons_Widget");') );
+add_action('widgets_init', create_function('', 'register_widget("SMI_Optimized");') );
 
 ?>

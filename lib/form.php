@@ -4,8 +4,7 @@ global $siw_social_accounts;
 $siw_data = array();
 
 foreach ($siw_social_accounts as $site => $id) {
-	if($instance[$id] == '') { $siw_data[$id] = 'http://'; }
-	else { $siw_data[$id] = $instance[$id]; }
+	$siw_data[$id] = (isset($instance[$id]) && $instance[$id] == '') ? $siw_data[$id] = 'http://' : $siw_data[$id] = $instance[$id]; 
 }
 
 $siw_data['title'] = $instance['title'];
@@ -15,7 +14,7 @@ $siw_data['show_title'] = $instance['show_title'];
 
 ?>
 
-<div class="social_icons_widget">
+<div class="SMI_Optimized">
 
 <p><label for="<?php echo $this->get_field_id('title'); ?>">Title:</label>
 <input class="widefat" type="text" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo esc_attr($siw_data['title']); ?>" /></p>
