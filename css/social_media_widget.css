@@ -12,6 +12,7 @@
 
 .social-icons-widget ul li a {
 	margin:0;
+	text-decoration: none;
 }
 
 .social-icons-widget ul.show-labels li {
@@ -24,145 +25,158 @@
 	vertical-align:middle;
 }
 
-.social-icons-widget ul.show-labels li .small_unknown, .social-icons-widget ul.show-labels li .small_aboutme, .social-icons-widget ul.show-labels li .small_behance, .social-icons-widget ul.show-labels li .small_codepen, .social-icons-widget ul.show-labels li .small_dribbble, .social-icons-widget ul.show-labels li .small_email, .social-icons-widget ul.show-labels li .small_envato, .social-icons-widget ul.show-labels li .small_facebook, .social-icons-widget ul.show-labels li .small_fivehundredpx, .social-icons-widget ul.show-labels li .small_flickr, .social-icons-widget ul.show-labels li .small_forrst, .social-icons-widget ul.show-labels li .small_foursquare, .social-icons-widget ul.show-labels li .small_github, .social-icons-widget ul.show-labels li .small_googleplus, .social-icons-widget ul.show-labels li .small_instagram, .social-icons-widget ul.show-labels li .small_kickstarter, .social-icons-widget ul.show-labels li .small_klout, .social-icons-widget ul.show-labels li .small_linkedin, .social-icons-widget ul.show-labels li .small_medium, .social-icons-widget ul.show-labels li .small_path, .social-icons-widget ul.show-labels li .small_pinterest, .social-icons-widget ul.show-labels li .small_rss, .social-icons-widget ul.show-labels li .small_soundcloud, .social-icons-widget ul.show-labels li .small_speakerdeck, .social-icons-widget ul.show-labels li .small_stumbleupon, .social-icons-widget ul.show-labels li .small_technorati, .social-icons-widget ul.show-labels li .small_tumblr, .social-icons-widget ul.show-labels li .small_twitter, .social-icons-widget ul.show-labels li .small_vimeo, .social-icons-widget ul.show-labels li .small_vine, .social-icons-widget ul.show-labels li .small_wordpress, .social-icons-widget ul.show-labels li .small_yelp, .social-icons-widget ul.show-labels li .small_youtube, .social-icons-widget ul.show-labels li .small_zerply{
-	background: url(sprites.social-icons-widget ul.show-labels li .small_png) no-repeat;
-	width: 16px;
-	height: 16px;
+.social-icons-widget .small_unknown, .social-icons-widget .small_aboutme, .social-icons-widget .small_behance, .social-icons-widget .small_codepen, .social-icons-widget .small_dribbble, .social-icons-widget .small_email, .social-icons-widget .small_envato, .social-icons-widget .small_facebook, .social-icons-widget .small_fivehundredpx, .social-icons-widget .small_flickr, .social-icons-widget .small_forrst, .social-icons-widget .small_foursquare, .social-icons-widget .small_github, .social-icons-widget .small_googleplus, .social-icons-widget .small_instagram, .social-icons-widget .small_kickstarter, .social-icons-widget .small_klout, .social-icons-widget .small_linkedin, .social-icons-widget .small_medium, .social-icons-widget .small_path, .social-icons-widget .small_pinterest, .social-icons-widget .small_rss, .social-icons-widget .small_soundcloud, .social-icons-widget .small_speakerdeck, .social-icons-widget .small_stumbleupon, .social-icons-widget .small_technorati, .social-icons-widget .small_tumblr, .social-icons-widget .small_twitter, .social-icons-widget .small_vimeo, .social-icons-widget .small_vine, .social-icons-widget .small_wordpress, .social-icons-widget .small_yelp, .social-icons-widget .small_youtube, .social-icons-widget .small_zerply{
+	position: relative;
 }
 
-.social-icons-widget ul.show-labels li .small_unknown{
+.social-icons-widget .small_unknown .site-icon, .social-icons-widget .small_aboutme .site-icon, .social-icons-widget .small_behance .site-icon, .social-icons-widget .small_codepen .site-icon, .social-icons-widget .small_dribbble .site-icon, .social-icons-widget .small_email .site-icon, .social-icons-widget .small_envato .site-icon, .social-icons-widget .small_facebook .site-icon, .social-icons-widget .small_fivehundredpx .site-icon, .social-icons-widget .small_flickr .site-icon, .social-icons-widget .small_forrst .site-icon, .social-icons-widget .small_foursquare .site-icon, .social-icons-widget .small_github .site-icon, .social-icons-widget .small_googleplus .site-icon, .social-icons-widget .small_instagram .site-icon, .social-icons-widget .small_kickstarter .site-icon, .social-icons-widget .small_klout .site-icon, .social-icons-widget .small_linkedin .site-icon, .social-icons-widget .small_medium .site-icon, .social-icons-widget .small_path .site-icon, .social-icons-widget .small_pinterest .site-icon, .social-icons-widget .small_rss .site-icon, .social-icons-widget .small_soundcloud .site-icon, .social-icons-widget .small_speakerdeck .site-icon, .social-icons-widget .small_stumbleupon .site-icon, .social-icons-widget .small_technorati .site-icon, .social-icons-widget .small_tumblr .site-icon, .social-icons-widget .small_twitter .site-icon, .social-icons-widget .small_vimeo .site-icon, .social-icons-widget .small_vine .site-icon, .social-icons-widget .small_wordpress .site-icon, .social-icons-widget .small_yelp .site-icon, .social-icons-widget .small_youtube .site-icon, .social-icons-widget .small_zerply .site-icon{
+	background: url('../icons/small/sprites.png') no-repeat;	
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 5px;
+}
+
+.social-icons-widget .small_unknown .site-icon + span, .social-icons-widget .small_aboutme .site-icon + span, .social-icons-widget .small_behance .site-icon + span, .social-icons-widget .small_codepen .site-icon + span, .social-icons-widget .small_dribbble .site-icon + span, .social-icons-widget .small_email .site-icon + span, .social-icons-widget .small_envato .site-icon + span, .social-icons-widget .small_facebook .site-icon + span, .social-icons-widget .small_fivehundredpx .site-icon + span, .social-icons-widget .small_flickr .site-icon + span, .social-icons-widget .small_forrst .site-icon + span, .social-icons-widget .small_foursquare .site-icon + span, .social-icons-widget .small_github .site-icon + span, .social-icons-widget .small_googleplus .site-icon + span, .social-icons-widget .small_instagram .site-icon + span, .social-icons-widget .small_kickstarter .site-icon + span, .social-icons-widget .small_klout .site-icon + span, .social-icons-widget .small_linkedin .site-icon + span, .social-icons-widget .small_medium .site-icon + span, .social-icons-widget .small_path .site-icon + span, .social-icons-widget .small_pinterest .site-icon + span, .social-icons-widget .small_rss .site-icon + span, .social-icons-widget .small_soundcloud .site-icon + span, .social-icons-widget .small_speakerdeck .site-icon + span, .social-icons-widget .small_stumbleupon .site-icon + span, .social-icons-widget .small_technorati .site-icon + span, .social-icons-widget .small_tumblr .site-icon + span, .social-icons-widget .small_twitter .site-icon + span, .social-icons-widget .small_vimeo .site-icon + span, .social-icons-widget .small_vine .site-icon + span, .social-icons-widget .small_wordpress .site-icon + span, .social-icons-widget .small_yelp .site-icon + span, .social-icons-widget .small_youtube .site-icon + span, .social-icons-widget .small_zerply .site-icon + span
+{
+	padding-left: 18px;
+}
+
+.social-icons-widget .small_unknown .site-icon {
 	background-position: 0 0;
 }
 
-.social-icons-widget ul.show-labels li .small_aboutme{
+.social-icons-widget .small_aboutme .site-icon {
 	background-position: -16px 0;
 }
 
-.social-icons-widget ul.show-labels li .small_behance{
+.social-icons-widget .small_behance .site-icon {
 	background-position: -32px 0;
 }
 
-.social-icons-widget ul.show-labels li .small_codepen{
+.social-icons-widget .small_codepen .site-icon {
 	background-position: -48px 0;
 }
 
-.social-icons-widget ul.show-labels li .small_dribbble{
+.social-icons-widget .small_dribbble .site-icon {
 	background-position: -64px 0;
 }
 
-.social-icons-widget ul.show-labels li .small_email{
+.social-icons-widget .small_email .site-icon {
 	background-position: -80px 0;
 }
 
-.social-icons-widget ul.show-labels li .small_envato{
+.social-icons-widget .small_envato .site-icon {
 	background-position: 0 -16px ;
 }
 
-.social-icons-widget ul.show-labels li .small_facebook{
+.social-icons-widget .small_facebook .site-icon {
 	background-position: -16px -16px ;
 }
 
-.social-icons-widget ul.show-labels li .small_fivehundredpx{
+.social-icons-widget .small_fivehundredpx .site-icon {
 	background-position: -32px -16px ;
 }
 
-.social-icons-widget ul.show-labels li .small_flickr{
+.social-icons-widget .small_flickr .site-icon {
 	background-position: -48px -16px ;
 }
 
-.social-icons-widget ul.show-labels li .small_forrst{
+.social-icons-widget .small_forrst .site-icon {
 	background-position: -64px -16px ;
 }
 
-.social-icons-widget ul.show-labels li .small_foursquare{
+.social-icons-widget .small_foursquare .site-icon {
 	background-position: -80px -16px ;
 }
 
-.social-icons-widget ul.show-labels li .small_github{
+.social-icons-widget .small_github .site-icon {
 	background-position: 0 -32px ;
 }
 
-.social-icons-widget ul.show-labels li .small_googleplus{
+.social-icons-widget .small_googleplus .site-icon {
 	background-position: -16px -32px ;
 }
 
-.social-icons-widget ul.show-labels li .small_instagram{
+.social-icons-widget .small_instagram .site-icon {
 	background-position: -32px -32px ;
 }
 
-.social-icons-widget ul.show-labels li .small_kickstarter{
+.social-icons-widget .small_kickstarter .site-icon {
 	background-position: -48px -32px ;
 }
 
-.social-icons-widget ul.show-labels li .small_klout{
+.social-icons-widget .small_klout .site-icon {
 	background-position: -64px -32px ;
 }
 
-.social-icons-widget ul.show-labels li .small_linkedin{
+.social-icons-widget .small_linkedin .site-icon {
 	background-position: -80px -32px ;
 }
 
-.social-icons-widget ul.show-labels li .small_medium{
+.social-icons-widget .small_medium .site-icon {
 	background-position: 0 -48px ;
 }
 
-.social-icons-widget ul.show-labels li .small_path{
+.social-icons-widget .small_path .site-icon {
 	background-position: -16px -48px ;
 }
 
-.social-icons-widget ul.show-labels li .small_pinterest{
+.social-icons-widget .small_pinterest .site-icon {
 	background-position: -32px -48px ;
 }
 
-.social-icons-widget ul.show-labels li .small_rss{
+.social-icons-widget .small_rss .site-icon {
 	background-position: -48px -48px ;
 }
 
-.social-icons-widget ul.show-labels li .small_soundcloud{
+.social-icons-widget .small_soundcloud .site-icon {
 	background-position: -64px -48px ;
 }
 
-.social-icons-widget ul.show-labels li .small_speakerdeck{
+.social-icons-widget .small_speakerdeck .site-icon {
 	background-position: -80px -48px ;
 }
 
-.social-icons-widget ul.show-labels li .small_stumbleupon{
+.social-icons-widget .small_stumbleupon .site-icon {
 	background-position: 0 -64px ;
 }
 
-.social-icons-widget ul.show-labels li .small_technorati{
+.social-icons-widget .small_technorati .site-icon {
 	background-position: -16px -64px ;
 }
 
-.social-icons-widget ul.show-labels li .small_tumblr{
+.social-icons-widget .small_tumblr .site-icon {
 	background-position: -32px -64px ;
 }
 
-.social-icons-widget ul.show-labels li .small_twitter{
+.social-icons-widget .small_twitter .site-icon {
 	background-position: -48px -64px ;
 }
 
-.social-icons-widget ul.show-labels li .small_vimeo{
+.social-icons-widget .small_vimeo .site-icon {
 	background-position: -64px -64px ;
 }
 
-.social-icons-widget ul.show-labels li .small_vine{
+.social-icons-widget .small_vine .site-icon {
 	background-position: -80px -64px ;
 }
 
-.social-icons-widget ul.show-labels li .small_wordpress{
+.social-icons-widget .small_wordpress .site-icon {
 	background-position: 0 -80px ;
 }
 
-.social-icons-widget ul.show-labels li .small_yelp{
+.social-icons-widget .small_yelp .site-icon {
 	background-position: -16px -80px ;	
 }
 
-.social-icons-widget ul.show-labels li .small_youtube{
+.social-icons-widget .small_youtube .site-icon {
 	background-position: -32px -80px ;
 }
 
-.social-icons-widget ul.show-labels li .small_zerply{
+.social-icons-widget .small_zerply .site-icon {
 	background-position: -48px -80px ;
 }
+
+
 
