@@ -20,11 +20,8 @@ $ul_class .= 'icons-'.$smwi_icons;
 echo apply_filters('social_icon_opening_tag', '<div class="social-icons-widget"><ul class="'.$ul_class.'">');
  
 foreach($smwi_social_accounts as $smwi_title => $id) :
-	if(!empty($instance[$id]) != '' && $instance[$id] != 'http://') :		
-		global $smwi_data;
+	if(!empty($instance[$id]) != '' && $instance[$id] != 'http://') :	
 		global $smwi_icon_output;
-		$smwi_data['id'] = $id;
-		$smwi_data['url'] = $instance[$id];
 		
 		//in case of using NONE as the icon set, we will force labels
 		$format = "";
