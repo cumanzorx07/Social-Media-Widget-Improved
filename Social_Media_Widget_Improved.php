@@ -14,7 +14,7 @@ class Social_Media_Widget_Improved extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'social_media_widget_improved', // Base ID
-			'Social Icons Optimized', // Widget Name
+			'Social Media', // Widget Name
 			array(
 				'classname' => 'Social_Media_Widget_Improved',
 				'description' => 'Displays a list of social media website icons and a link to your profile.',

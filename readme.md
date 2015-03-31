@@ -1,4 +1,4 @@
-Social Media Widget v1 WordPress
+Social Media Widget Improved v1 WordPress
 ========================================
 
 Social Media Widget is based on the Social Media Icon Widget plugin created by Daniel Nisbet.
