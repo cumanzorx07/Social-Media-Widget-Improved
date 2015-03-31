@@ -1,7 +1,7 @@
-SMI Optimized v1 WordPress
+Social Media Widget v1 WordPress
 ========================================
 
-SMI Optimized is based on the Social Media Icon Widget plugin created by Daniel Nisbet.
+Social Media Widget is based on the Social Media Icon Widget plugin created by Daniel Nisbet.
 The main idea is to provide a plugin that use the latest google guidelines for SEO and newer PHP techniques to reduce server usage and maximize user experience. 
 
 

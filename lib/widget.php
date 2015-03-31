@@ -20,8 +20,7 @@ $ul_class .= 'icons-'.$smi_icons;
 echo apply_filters('social_icon_opening_tag', '<ul class="'.$ul_class.'">');
  
 foreach($smi_social_accounts as $smi_title => $id) :
-	if($instance[$id] != '' && $instance[$id] != 'http://') :
-		
+	if($instance[$id] != '' && $instance[$id] != 'http://') :		
 		global $smi_data;
 		global $smi_icon_output;
 		$smi_data['id'] = $id;

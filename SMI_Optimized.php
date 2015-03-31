@@ -9,14 +9,14 @@ Author URI: http://carlosumanzor.com/
 Original Idea: Dan Nisbet (https://nisbetcreative.com/)
 */
 
-class SMI_Optimized extends WP_Widget {
+class Social_Media_Widget_Improved extends WP_Widget {
 
 	function __construct() {
 		parent::__construct(
-			'smi_optimized-widget', // Base ID
+			'social_media_widget_improved', // Base ID
 			'Social Icons Optimized', // Widget Name
 			array(
-				'classname' => 'SMI_Optimized',
+				'classname' => 'Social_Media_Widget_Improved',
 				'description' => 'Displays a list of social media website icons and a link to your profile.',
 			),
 			array(
@@ -56,15 +56,15 @@ class SMI_Optimized extends WP_Widget {
 	}
 
 	function register_admin_styles() {
-		wp_enqueue_style('smi_optimized-widget-admin', plugins_url('smi-optimized/css/social_icons_admin.css'));
+		wp_enqueue_style('social_media_widget_improved-admin', plugins_url('smi-optimized/css/social_media_admin.css'));
 	}
 
 	function register_widget_styles() {
-		wp_enqueue_style('smi_optimized-widget-widget', plugins_url('smi-optimized/css/SMI_Optimized.css'));
+		wp_enqueue_style('social_media_widget_improved-widget', plugins_url('smi-optimized/css/social_media_widget.css'));
 	}
 
 }
 
-add_action('widgets_init', create_function('', 'register_widget("SMI_Optimized");') );
+add_action('widgets_init', create_function('', 'register_widget("Social_Media_Widget_Improved");') );
 
 ?>
