@@ -36,10 +36,10 @@ class Social_Media_Widget_Improved extends WP_Widget {
 	}
 
 	function update($new_instance, $old_instance) {
-		global $smi_social_accounts;
+		global $smwi_social_accounts;
 		$instance = array();
 
-		foreach ($smi_social_accounts as $site => $id) {
+		foreach ($smwi_social_accounts as $site => $id) {
 			$instance[$id] = $new_instance[$id];
 		}
 
