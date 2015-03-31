@@ -28,6 +28,14 @@
 .social-icons-widget .icons-large li
 {
 	height: 66px;
+	width: auto;
+	min-width: 64px;
+}
+.social-icons-widget .icons-medium li
+{
+	height: 38px;
+	width: auto;
+	min-width: 32px;
 }
 
 /* SMALL icons */
@@ -337,7 +345,7 @@
 }
 
 .social-icons-widget .medium_zerply .site-icon {
-	background-position: -95px -160px ;
+	background-position: -96px -160px ;
 }
 
 /*Large icons*/
