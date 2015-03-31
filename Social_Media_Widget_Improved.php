@@ -56,11 +56,11 @@ class Social_Media_Widget_Improved extends WP_Widget {
 	}
 
 	function register_admin_styles() {
-		wp_enqueue_style('social_media_widget_improved-admin', plugins_url('smi-optimized/css/social_media_admin.css'));
+		wp_enqueue_style('social_media_widget_improved-admin', plugins_url('Social-Media-Widget-Improved/css/social_media_admin.css'));
 	}
 
 	function register_widget_styles() {
-		wp_enqueue_style('social_media_widget_improved-widget', plugins_url('smi-optimized/css/social_media_widget.css'));
+		wp_enqueue_style('social_media_widget_improved-widget', plugins_url('Social-Media-Widget-Improved/css/social_media_widget.css'));
 	}
 
 }
