@@ -3,7 +3,7 @@
 Plugin Name: Social Media Widget Improved
 Plugin URI: https://github.com/cumanzorx07/Social-Media-Widget-Improved
 Version: 1.0
-Description: This plugins provides a list of social media icon to link your provide with your site.
+Description: This plugins provides a list of social media icon to link your profile with your site.
 Author: Carlos Umanzor
 Author URI: http://carlosumanzor.com/
 Original Idea: Dan Nisbet (https://nisbetcreative.com/)
@@ -17,7 +17,7 @@ class Social_Media_Widget_Improved extends WP_Widget {
 			'Social Media', // Widget Name
 			array(
 				'classname' => 'Social_Media_Widget_Improved',
-				'description' => 'Displays a list of social media website icons and a link to your profile.',
+				'description' => 'Displays a list of social media website icons and a link to your profile with your site.',
 			),
 			array(
 				'width' => 600,

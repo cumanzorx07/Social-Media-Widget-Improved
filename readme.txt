@@ -8,7 +8,7 @@ Stable tag: 1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-This plugins provides a list of social media icon to link your provide with your site.
+This plugins provides a list of social media icon to link your profile with your site.
 
 == Description ==
 
