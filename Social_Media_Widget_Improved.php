@@ -47,7 +47,8 @@ class Social_Media_Widget_Improved extends WP_Widget {
 		$instance['icons'] = $new_instance['icons'];
 		$instance['labels'] = $new_instance['labels'];
 		$instance['show_title'] = $new_instance['show_title'];
-
+		$instance['add_rel_publisher_to_google_plus'] = $new_instance['add_rel_publisher_to_google_plus'];
+		
 		return $instance;
 	}
 

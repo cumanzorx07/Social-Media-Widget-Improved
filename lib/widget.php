@@ -3,9 +3,10 @@ global $smwi_social_accounts;
 extract($args);
 
 $smwi_title = empty($instance['title']) ? 'Follow Us' : apply_filters('widget_title', $instance['title']);
-$smwi_icons = $instance['icons'];
-$smwi_labels = $instance['labels'];
-$smwi_show_title = $instance['show_title'];
+$smwi_icons = empty($instance['icons']) ? '' : $instance['icons'];
+$smwi_labels = empty($instance['labels']) ? '' : $instance['labels'];
+$smwi_show_title = empty($instance['show_title']) ? '' : $instance['show_title'];
+$smwi_add_rel_publisher = empty($instance['add_rel_publisher_to_google_plus']) ? '' : $instance['add_rel_publisher_to_google_plus'];
 
 echo $before_widget;
 
@@ -30,16 +31,22 @@ foreach($smwi_social_accounts as $smwi_title => $id) :
 		{			
 			$dataToFormat['classCSS'] = $smwi_icons."_".$id;
 			$dataToFormat['url'] = $instance[$id];	
-			$dataToFormat['label'] = ($smwi_labels == 'show') ? '<span class="site-label">'.$smwi_title.'</span>' : '';			
-			$format = '<li class="%1$s"><a href="%2$s" target="_blank"><span class="site-icon"></span>%3$s</a></li>';			
+			$dataToFormat['internal'] = ($smwi_labels == 'show') ? '<span class="site-icon"></span><span class="site-label">'.$smwi_title.'</span>' : '<span class="site-icon"></span>';				
 		}
 		else
 		{
 			$dataToFormat['classCSS'] = "labelonly";
 			$dataToFormat['url'] = $instance[$id];	
-			$dataToFormat['label'] = '<span class="site-label">'.$smwi_title.'</span>';
+			$dataToFormat['internal'] = '<span class="site-label">'.$smwi_title.'</span>';
+		}
+		if($smwi_add_rel_publisher == "add" && $id == "googleplus")
+		{
+			$format = '<li class="%1$s"><a href="%2$s" target="_blank" rel="publisher">%3$s</a></li>';
+		}
+		else
+		{
 			$format = '<li class="%1$s"><a href="%2$s" target="_blank">%3$s</a></li>';
-		}		
+		}
 		$smwi_icon_output = apply_filters('social_icon_output', $format);
 		echo vsprintf($smwi_icon_output, $dataToFormat);
 

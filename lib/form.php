@@ -7,10 +7,11 @@ foreach ($smwi_social_accounts as $site => $id) {
 	$smwi_data[$id] = (empty($instance[$id])) ? $smwi_data[$id] = 'http://' : $smwi_data[$id] = $instance[$id]; 
 }
 
-$smwi_data['title'] = $instance['title'];
-$smwi_data['icons'] = $instance['icons'];
-$smwi_data['labels'] = $instance['labels'];
-$smwi_data['show_title'] = $instance['show_title'];
+$smwi_data['title'] = (empty($instance['title'])) ? "" : $instance['title'];
+$smwi_data['icons'] = (empty($instance['icons'])) ? "" : $instance['icons'];
+$smwi_data['labels'] = (empty($instance['labels'])) ? "" : $instance['labels'];
+$smwi_data['show_title'] = (empty($instance['show_title'])) ? "" : $instance['show_title'];
+$smwi_data['add_rel_publisher_to_google_plus'] = (empty($instance['add_rel_publisher_to_google_plus'])) ? "" : $instance['add_rel_publisher_to_google_plus'];
 
 ?>
 
@@ -48,6 +49,12 @@ $smwi_sizes = array(
 
 <?php if(esc_attr($smwi_data['show_title'] == 'show')) { $checked = ' checked="checked"'; } else { $checked = ''; } ?>
 <p class="label_options"><input type="checkbox" id="<?php echo $this->get_field_id('show_title'); ?>" name="<?php echo $this->get_field_name('show_title'); ?>" value="show"<?php echo $checked; ?> /> <label for="<?php echo $this->get_field_id('show_title'); ?>">Hide Title</label></p>
+
+<?php if(esc_attr($smwi_data['add_rel_publisher_to_google_plus'] == 'add')) { $checked = ' checked="checked"'; } else { $checked = ''; } ?>
+
+<p class="label_options"><input type="checkbox" id="<?php echo $this->get_field_id('add_rel_publisher_to_google_plus'); ?>" name="<?php echo $this->get_field_name('add_rel_publisher_to_google_plus'); ?>" value="add"<?php echo $checked; ?> /> <label for="<?php echo $this->get_field_id('add_rel_publisher_to_google_plus'); ?>">Add rel=publisher to Google Plus</label></p>
+
+
 
 <ul class="social_accounts">
 	<?php foreach ($smwi_social_accounts as $site => $id) : ?>
