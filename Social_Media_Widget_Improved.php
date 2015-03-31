@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: SMI Optimized
-Plugin URI: https://github.com/cumanzorx07/smi-optimized
+Plugin Name: Social Media Widget Improved
+Plugin URI: https://github.com/cumanzorx07/Social-Media-Widget-Improved
 Version: 1.0
 Description: This plugins provides a list of social media icon to link your provide with your site.
 Author: Carlos Umanzor
